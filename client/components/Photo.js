@@ -25,7 +25,7 @@ const Photo = React.createClass({
                         <button className="likes">&hearts; {this.props.post.likes}</button>
                         <Link className="button" to={`/view/${this.props.post.code}`}>
                             <span className="comment-count">
-                                <span className="speech-bubble"></span>
+                                <span className="speech-bubble"> </span>
                                 {this.props.comments[this.props.post.code] ? this.props.comments[this.props.post.code].length : 0}
                             </span>
                         </Link>
